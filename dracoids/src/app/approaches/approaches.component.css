@@ -1,0 +1,16 @@
+h1 {
+    font-family: Orbitron;
+}
+
+.statBox hr {
+    width: 55%;
+}
+
+.iconBox {
+    text-align: center;
+}
+
+.iconBox a img {
+
+    width: 10%;
+}

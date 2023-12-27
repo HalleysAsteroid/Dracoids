@@ -1,0 +1,40 @@
+* {
+    font-family: 'EB Garamond', serif;
+    font-size: 1.5vw;
+}
+
+hr {
+    margin-top: 1%;
+    margin-bottom: 1%;
+}
+
+label {
+    margin: auto;
+    text-align: center;
+}
+
+select {
+    margin: auto;
+    text-align: center;
+}
+
+div {
+    text-align: center;
+}
+
+form {
+    text-align: center;
+}
+
+input {
+    text-align: center;
+}
+
+.sectionlabel {
+    font-size: 2vw;
+    color: black;
+    clear: both;
+    padding: 0.5vw;
+    display: block;
+    font-family: Orbitron;
+}

@@ -1,0 +1,75 @@
+/* You can add global styles to this file, and also import other style files */
+* {
+    font-family: 'EB Garamond', serif;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #333333;
+
+}
+
+/* Page Body */
+h1 {
+    font-family: "Orbitron";
+    font-size: 2em;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+}
+
+h2 {
+    font-size: 1.5em;
+    text-indent: 1.5em;
+    margin: 15px 15px 0px 15px;
+}
+
+hr {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    border-color: #600;
+    border-width: 3px;
+    border-radius: 50%;
+    border-style: solid;
+}
+
+#mainContainer {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    background-image: url(assets/images/brushedMetal.png);
+    border-left: 5px #600 solid;
+    border-right: 5px #600 solid;
+    max-width: 1600px;
+}
+
+/* Footer */
+footer {
+    clear: both;
+    border-top-style: ridge;
+    border-color: #660000;
+    border-width: 5px;
+    display: block;
+    text-align: center;
+}
+
+footer a {
+    margin: auto;
+    text-align: center;
+}
+
+/* Animations */
+@keyframes DropBox1 {
+    from {
+        position: relative;
+        top: 0px;
+    }
+
+    to {
+        position: relative;
+        top: 250px;
+    }
+}

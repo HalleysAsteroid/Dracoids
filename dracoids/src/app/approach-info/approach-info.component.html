@@ -1,0 +1,101 @@
+<h1 id="approachTitle"> &nbsp;{{currentApproach}}&nbsp;</h1>
+<div class="row" id="infoBlurb">
+    <img id="approachPortrait" src="../../assets/images/approachPortraits/{{currentApproach}}.png"
+        alt="ApproachPortrait">
+    <h2 id="history">{{approach.description}}</h2>
+</div>
+
+<hr>
+
+<div class="row">
+
+    <h1>Perks</h1>
+
+    <table>
+        <tr>
+            <td colspan="3">
+                <h2 id="bgp">Beginner Perks:<br>
+                    <ul>
+                        <li *ngFor="let perk of perks[0].description">{{perk}}</li>
+                    </ul>
+                </h2>
+                <br>
+            </td>
+        </tr>
+        <!-- <tr>
+            <th>Level</th>
+            <th></th>
+            <th></th>
+        </tr> -->
+        <tr>
+            <td>3</td>
+            <td>
+                <ul>
+                    <li *ngFor="let perk of perks[1].description">{{perk}}</li>
+                </ul>
+            </td>
+            <td>
+                <ul>
+                    <li *ngFor="let perk of perks[2].description">{{perk}}</li>
+                </ul>
+            </td>
+        </tr>
+
+        <tr>
+            <td>5</td>
+            <td>
+                <ul>
+                    <li *ngFor="let perk of perks[3].description">{{perk}}</li>
+                </ul>
+            </td>
+            <td>
+                <ul>
+                    <li *ngFor="let perk of perks[4].description">{{perk}}</li>
+                </ul>
+            </td>
+        </tr>
+
+        <tr>
+            <td>8</td>
+            <td>
+                <ul>
+                    <li *ngFor="let perk of perks[5].description">{{perk}}</li>
+                </ul>
+            </td>
+            <td>
+                <ul>
+                    <li *ngFor="let perk of perks[6].description">{{perk}}</li>
+                </ul>
+            </td>
+        </tr>
+        <tr>
+            <td>10</td>
+            <td>
+                <ul>
+                    <li *ngFor="let perk of perks[7].description">{{perk}}</li>
+                </ul>
+            </td>
+            <td>
+                <ul>
+                    <li *ngFor="let perk of perks[8].description">{{perk}}</li>
+                </ul>
+            </td>
+        </tr>
+    </table>
+    <br>
+    <hr>
+    <h1>Soul Abilities</h1>
+
+    <table>
+        <tr>
+            <th>Level</th>
+            <th>Name</th>
+            <th>Effect</th>
+        </tr>
+        <tr *ngFor="let soulAbility of soulabilities">
+            <td>{{soulAbility.level}}</td>
+            <td>{{soulAbility.name}}</td>
+            <td>{{soulAbility.description}}</td>
+        </tr>
+    </table>
+</div>

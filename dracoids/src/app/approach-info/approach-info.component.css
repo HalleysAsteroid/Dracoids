@@ -1,0 +1,63 @@
+table {
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+    border: 0px solid black;
+    text-align: center;
+    background-color: black;
+}
+
+th,
+td {
+    clear: none;
+    background-color: #cccccc;
+    border: 1px black solid;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    width: 45%;
+}
+
+th:first-of-type,
+td:first-of-type {
+    width: 10%
+}
+
+ul {
+    list-style-type: "❖";
+    list-style-position: inside;
+}
+
+h1 {
+    font-family: "Orbitron";
+}
+
+.row {
+    overflow: auto;
+    clear: both;
+}
+
+#infoBlurb {
+    margin: auto;
+    width: 90%;
+}
+
+#infoBlurb h2 {
+    padding: 70px 0;
+}
+
+#approachPortrait {
+    float: right;
+    width: 30%;
+}
+
+#bgp {
+    text-indent: 0;
+}
+
+#approachTitle {
+    font-size: 2.5vw;
+    font-family: "Orbitron";
+    text-decoration: underline;
+}

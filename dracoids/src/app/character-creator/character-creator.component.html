@@ -1,0 +1,60 @@
+<form (ngSubmit)="onSubmit()">
+    <label for="approach-selection" id="approach-label" class="sectionlabel">Choose your Approaches!</label>
+    <div id="approach-selection">
+        <label for="primary-approach">Primary Approach: </label>
+        <select formControlName="primary-approach" id="primary-approach">
+            <option *ngFor="let approachName of approachList" value="{{approachName}}">{{approachName}}</option>
+        </select>
+        <br>
+        <label for="secondary-approach">Secondary Approach: </label>
+        <select formControlName="secondary-approach" id="secondary-approach">
+            <option *ngFor="let approachName of approachList" value="{{approachName}}">{{approachName}}</option>
+        </select>
+    </div>
+    <hr>
+    <label for="kin-selection" class="sectionlabel">Choose your Kin!</label>
+    <select formControlName="kin" id="kin-selection">
+        <option *ngFor="let kinName of kinsList" value="{{kinName}}">{{kinName}}</option>
+    </select>
+    <hr>
+    <div id="ability-scores">
+        <label class="sectionlabel">Choose your Ability Scores!</label>
+        <h4>The total of your ability scores should add up to 10.</h4>
+        <br>
+        <div>
+            <label for="strength-score">Strength: </label>
+            <input value=0 type="number" formControlName="strength-score" id="strength-score" min=-3 max=4>
+        </div>
+        <div>
+            <label for="dexterity-score">Dexterity: </label>
+            <input value=0 type="number" formControlName="dexterity-score" id="dexterity-score" min=-3 max=4>
+        </div>
+        <div>
+            <label for="constitution-score">Constitution: </label>
+            <input value=0 type="number" formControlName="constitution-score" id="constitution-score" min=-3 max=4>
+        </div>
+        <div>
+            <label for="intelligence-score">Intelligence: </label>
+            <input value=0 type="number" formControlName="intelligence-score" id="intelligence-score" min=-3 max=4>
+        </div>
+        <div>
+            <label for="wisdom-score">Wisdom: </label>
+            <input value=0 type="number" formControlName="wisdom-score" id="wisdom-score" min=-3 max=4>
+        </div>
+        <div>
+            <label for="charisma-score">Charisma: </label>
+            <input value=0 type="number" formControlName="charisma-score" id="charisma-score" min=-3 max=4>
+        </div>
+    </div>
+    <hr>
+    <label class="sectionlabel" for="ftier-selection">Choose your Faction Tier!</label>
+    <select formControlName="faction-tier" id="ftier-selection">
+        <option *ngFor="let factionTier of factionList" value="{{factionTier}}">{{factionTier}}</option>
+    </select>
+    <br>
+    <hr>
+    <label class="sectionlabel" for="character-name-selection">Name your Character!</label>
+    <input id="character-name-selection" formControlName="name" type="text">
+    <br><br>
+    <button type="submit">Submit</button>
+</form>
